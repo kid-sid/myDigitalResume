@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sidhartha Mohanty | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         body {
@@ -14,46 +17,53 @@
             background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
             min-height: 100vh;
         }
+
         .hero-bg {
             background: linear-gradient(120deg, #0078d7 0%, #00c6fb 100%);
             padding: 0 0 80px 0;
             border-radius: 0 0 40px 40px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
         }
+
         .container {
             max-width: 1000px;
             margin: 40px auto 40px auto;
             background: #fff;
             padding: 40px 32px 32px 32px;
             border-radius: 18px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.10);
             position: relative;
             z-index: 2;
         }
+
         .profile-card {
             background: #fff;
             border-radius: 18px;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
             padding: 32px 24px 24px 24px;
             text-align: center;
             margin-bottom: 32px;
             position: relative;
             top: 0;
         }
+
         .profile-card h1 {
             font-family: 'Montserrat', sans-serif;
             font-size: 2.7rem;
             color: #0078d7;
             margin-bottom: 8px;
         }
+
         .profile-card .contact {
             color: #444;
             font-size: 1.08rem;
             margin-bottom: 10px;
         }
+
         .profile-card .links {
             margin-top: 10px;
         }
+
         .profile-card .links a {
             color: #0078d7;
             text-decoration: none;
@@ -61,19 +71,23 @@
             font-size: 1.3rem;
             transition: color 0.2s;
         }
+
         .profile-card .links a:hover {
             color: #00c6fb;
         }
+
         .summary {
             font-size: 1.13rem;
             color: #222;
             margin-bottom: 32px;
             text-align: center;
         }
+
         .section {
             margin-bottom: 36px;
             animation: fadeInUp 0.7s;
         }
+
         .section-title {
             color: #1976d2;
             font-size: 1.35rem;
@@ -83,42 +97,51 @@
             align-items: center;
             gap: 10px;
         }
+
         .card {
             background: #f7fafd;
             border-radius: 14px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
             padding: 22px 20px 18px 20px;
             margin-bottom: 18px;
             transition: box-shadow 0.2s;
         }
+
         .card:hover {
-            box-shadow: 0 6px 24px rgba(0,120,215,0.10);
+            box-shadow: 0 6px 24px rgba(0, 120, 215, 0.10);
         }
+
         .timeline {
             border-left: 3px solid #1976d2;
             margin-left: 10px;
             padding-left: 24px;
         }
+
         .job-title {
             font-weight: bold;
             color: #333;
         }
+
         .job-company {
             color: #1976d2;
             font-weight: 500;
         }
+
         .job-date {
             color: #888;
             font-size: 0.98rem;
         }
+
         .job ul {
             margin: 8px 0 0 18px;
         }
+
         .projects {
             display: flex;
             flex-wrap: wrap;
             gap: 18px;
         }
+
         .project-card {
             background: #fff;
             border-left: 4px solid #1976d2;
@@ -126,57 +149,84 @@
             border-radius: 10px;
             flex: 1 1 320px;
             min-width: 280px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
             margin-bottom: 8px;
         }
+
         .project-title {
             font-weight: 600;
             color: #1976d2;
             margin-bottom: 4px;
         }
+
         .project-link {
             color: #1976d2;
             text-decoration: none;
             margin-left: 8px;
             font-size: 0.97rem;
         }
+
         .skills-table {
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 12px;
         }
-        .skills-table th, .skills-table td {
+
+        .skills-table th,
+        .skills-table td {
             text-align: left;
             padding: 7px 10px;
         }
+
         .skills-table th {
             color: #1976d2;
             width: 180px;
             font-weight: 600;
         }
+
         .certs {
             display: flex;
             flex-direction: column;
             gap: 8px;
         }
+
         .cert-link {
             color: #1976d2;
             text-decoration: none;
             margin-left: 8px;
             font-size: 0.97rem;
         }
+
         .edu {
             margin-top: 10px;
         }
+
         @media (max-width: 700px) {
-            .container { padding: 8px; }
-            .profile-card { padding: 18px 6px 18px 6px; }
-            .projects { flex-direction: column; }
+            .container {
+                padding: 8px;
+            }
+
+            .profile-card {
+                padding: 18px 6px 18px 6px;
+            }
+
+            .projects {
+                flex-direction: column;
+            }
         }
+
         @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
+
         .download-btn {
             display: inline-block;
             background: linear-gradient(90deg, #0078d7 60%, #00c6fb 100%);
@@ -187,58 +237,94 @@
             text-decoration: none;
             font-size: 1.08rem;
             margin-top: 8px;
-            box-shadow: 0 2px 8px rgba(0,120,215,0.08);
+            box-shadow: 0 2px 8px rgba(0, 120, 215, 0.08);
             transition: background 0.2s, box-shadow 0.2s;
         }
+
         .download-btn:hover {
             background: linear-gradient(90deg, #005fa3 60%, #009ecb 100%);
-            box-shadow: 0 4px 16px rgba(0,120,215,0.15);
+            box-shadow: 0 4px 16px rgba(0, 120, 215, 0.15);
         }
     </style>
 </head>
+
 <body>
     <div class="hero-bg">
         <div style="height: 48px;"></div> <!-- Add space above the profile card -->
         <div class="container">
             <div class="profile-card">
                 <h1>Sidhartha Mohanty</h1>
-                <div class="contact"><i class="fa-solid fa-phone"></i> 9776296297 &nbsp;|&nbsp; <i class="fa-solid fa-envelope"></i> <a href="mailto:sidhartha.mohanty93@gmail.com">sidhartha.mohanty93@gmail.com</a></div>
+                <div class="contact"><i class="fa-solid fa-phone"></i> 9776296297 &nbsp;|&nbsp; <i
+                        class="fa-solid fa-envelope"></i> <a
+                        href="mailto:sidhartha.mohanty93@gmail.com">sidhartha.mohanty93@gmail.com</a></div>
                 <div class="links">
-                    <a href="https://www.linkedin.com/in/smohanty93/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/kid-sid" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://medium.com/@mohanty93" target="_blank" title="Medium"><i class="fab fa-medium"></i></a>
+                    <a href="https://www.linkedin.com/in/smohanty93/" target="_blank" title="LinkedIn"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/kid-sid" target="_blank" title="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://medium.com/@mohanty93" target="_blank" title="Medium"><i
+                            class="fab fa-medium"></i></a>
                 </div>
             </div>
             <div class="summary card">
-                <strong>Machine Learning Engineer</strong> with 5 years of experience in building and deploying ML models. Skilled in Python, SQL, and end-to-end ML workflows, specializing in predictive analytics, NLP, and AI-driven solutions.
+                <strong>Machine Learning Engineer with 6 years of experience in building ML models. Skilled in Python,
+                    SQL, and end to end ML workflows, specializing in NLP and responsible AI driven solutions.</strong>
             </div>
             <div class="section">
                 <div class="section-title"><i class="fa-solid fa-briefcase"></i> Experience</div>
                 <div class="timeline">
                     <div class="card">
-                        <div class="job-title">Unit Manager <span class="job-company">@ Bajaj Finserv</span></div>
-                        <div class="job-date">Dec 2021 - Present | Pune, India</div>
+                        <div class="job-title">Software Engineer 2 <span class="job-company">@ Stefanini</span></div>
+                        <div class="job-date">May 2025 - Present | Pune, India</div>
                         <ul>
-                            <li>Developed and trained ML models for classification from scratch.</li>
-                            <li>Collaborated with data engineers to build data pipelines and preprocess large datasets for model training.</li>
-                            <li>Used Kubeflow and MLflow to build machine learning pipelines to track versions, logs, and manage models.</li>
-                            <li>Implemented NLP models from scratch for text classification.</li>
-                            <li>Integrated ML models into production environments using Docker and GitHub.</li>
-                            <li>Shared findings and insights through visualizations and presentations.</li>
-                            <li>Integrated CI/CD workflows with Azure ML.</li>
-                            <li>Created proof of concepts for new technologies in Generative AI.</li>
+                            <li>Built an intelligent monitoring agent that queries platform metrics and provides
+                                automated troubleshooting steps for user issues.</li>
+                            <li>Reduced mean time to resolution (MTTR) by enabling automated root cause analysis across
+                                platform and services.</li>
+                            <li>Applied context engineering and routing strategies to dynamically select the appropriate
+                                agent node and operational tools.</li>
+                            <li>Led A/B testing on agent variants by tuning prompts and runtime parameters to compare
+                                performance.</li>
+                            <li>Implemented structured logging and observability for agent decisions and tool executions
+                                to improve debuggability.</li>
+                            <li>Integrated a RAG pipeline over internal technical wikis, error logs, and historical
+                                incident resolutions to ground agent responses.</li>
+                            <li>Developed dashboards to track LLM API call traces, detect anomalies, and identify
+                                performance or reliability issues.</li>
+                            <li>Implemented responsible AI principles by adding guardrails and fallback logic to prevent
+                                unsafe or incorrect operational guidance.</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="job-title"> Unit Manager <span class="job-company">@ Bajaj Finserv</span></div>
+                        <div class="job-date">Feb 2020 - Dec 2021 | Bengaluru, India</div>
+                        <ul>
+                            <li>Collaborated with data engineers to design data pipelines, ensuring data quality and
+                                readiness for large scale model training.</li>
+                            <li>Integrated ML models into production environments using MLflow and Docker, enabling
+                                versioned deployments and experiments.</li>
+                            <li>Monitored model performance post-deployment and coordinated retraining strategies to
+                                handle data drift and performance.</li>
+                            <li>Worked closely with business stakeholders to translate problem statements into
+                                measurable ML objectives and evaluation metrics.</li>
+                            <li>Communicated model insights and trade offs through visualizations and presentations to
+                                support data-driven decision-making.</li>
                         </ul>
                     </div>
                     <div class="card">
                         <div class="job-title">Advisor <span class="job-company">@ Concentrix</span></div>
                         <div class="job-date">Feb 2020 - Dec 2021 | Bengaluru, India</div>
                         <ul>
-                            <li>Developed and deployed end-to-end ML models for predictive analytics, including regression and classification.</li>
-                            <li>Performed EDA using Matplotlib, Seaborn, NumPy, Pandas.</li>
-                            <li>Optimized performance using feature engineering, hyperparameter tuning, and model evaluation techniques.</li>
-                            <li>Verified data accuracy and completeness through data quality checks.</li>
-                            <li>Conducted model performance monitoring and optimization.</li>
-                            <li>Presented findings through data visualizations and reports.</li>
+                            <li>Performed EDA using Pandas, NumPy, Matplotlib, and Seaborn to identify trends,
+                                anomalies, and data quality issues.</li>
+                            <li>Built PowerBI dashboards to track business performance metrics and support operational
+                                decision-making.</li>
+                            <li>Applied NLP techniques for sentiment analysis on customer chat data to extract
+                                qualitative insights.</li>
+                            <li>Conducted data validation and quality checks to ensure accuracy and completeness of
+                                analytical datasets.</li>
+                            <li>Verified data accuracy and completeness through data quality checks</li>
                         </ul>
                     </div>
                 </div>
@@ -247,28 +333,76 @@
                 <div class="section-title"><i class="fa-solid fa-diagram-project"></i> Projects</div>
                 <div class="projects">
                     <div class="project-card">
-                        <div class="project-title">Customer support Chatbot</div>
-                        <div>Created a RAG chatbot using company policies and FAQs to answer customer queries. Used Langchain, OpenAI GPT-4o mini, and Azure vector index.</div>
+                        <div class="project-title">Ops Agentic System</div>
+                        <div>Designed and implemented an agent based observability system using langgraph that
+                            continuously
+                            monitors Azure metrics and logs using MCP for standardized tools. The system correlates
+                            signals
+                            across services, performs automated root cause analysis, and assists the Ops team in faster
+                            incident diagnosis and resolution. <br><strong>Tech Stack:</strong> Python, LangGraph,
+                            Langchain, Azure
+                            Monitor, Azure Log Analytics, Azure MCP, OpenAI API, FastAPI, Docker.</div>
                     </div>
                     <div class="project-card">
-                        <div class="project-title">Intent based AI agent <a class="project-link" href="https://github.com/kid-sid/intent_based_ai_agents" target="_blank"><i class="fa-brands fa-github"></i></a></div>
-                        <div>Developed an agentic workflow using few-shot prompting to identify user intent and route queries. Integrated LLAMA, Mixtral, and GPT-4o-mini. Backend: FastAPI, Frontend: HTML/JS.</div>
+                        <div class="project-title">RAG Based Technical Support System</div>
+                        <div>Developed a RAG system that integrates company technical documentation with production
+                            error
+                            logs and prior incident resolutions. The solution retrieves contextually relevant knowledge
+                            to
+                            support root-cause analysis, accelerate troubleshooting, and reduce Ops team intervention.
+                            <br><strong>Tech Stack:</strong> Python, LangChain, OpenAI API, SentenceTransformers, FAISS,
+                            FastAPI,
+                            Docker, Azure.
+                        </div>
                     </div>
                     <div class="project-card">
-                        <div class="project-title">PDF RAG Chatbot <a class="project-link" href="https://github.com/kid-sid/chat_with_pdf" target="_blank"><i class="fa-brands fa-github"></i></a></div>
-                        <div>Created a chatbot to answer questions based on PDF content using Langchain, GPT-4o mini, FAISS vector store.</div>
+                        <div class="project-title">Agentic Knowledgebase Search System</div>
+                        <div>Built a high performance, controlled agentic search system using ripgrep style text
+                            scanning to
+                            query large unstructured knowledge bases with predictable latency. Delivered explainable,
+                            reproducible retrieval without probabilistic search. <br><strong>Tech Stack:</strong>
+                            Python, LangChain,
+                            LangGraph, Azure AI Search, Azure APIs.</div>
                     </div>
                     <div class="project-card">
-                        <div class="project-title">OCR based document processing</div>
-                        <div>Leveraged Pixtral-12B for high-accuracy text extraction from images. Used few-shot prompt engineering to convert text into structured JSON for business-ready tables.</div>
+                        <div class="project-title">Grafana Dashboard</div>
+                        <div>Developed multiple grafana dashboards to monitor APIs and infra to find out issues and send
+                            alert proactively to the respective teams. <br><strong>Tech Stack:</strong> Grafana,
+                            Prometheus, KQL.</div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-title">Sentiment Classifier</div>
+                        <div>Designed and implemented an NLP pipeline to classify customer support chat messages as
+                            positive
+                            or negative. <br><strong>Tech Stack:</strong> Python, HuggingFace Transformers, PyTorch,
+                            Scikit-learn,
+                            Pandas, NumPy</div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-title">PDF RAG Chatbot <a class="project-link"
+                                href="https://github.com/kid-sid/chat_with_pdf" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a></div>
+                        <div>Created a chatbot to answer questions based on PDF content using Langchain, GPT-4o mini,
+                            FAISS vector store. <br><strong>Tech Stack:</strong> Python, Langchain, OpenAI API, FAISS.
+                        </div>
                     </div>
                     <div class="project-card">
                         <div class="project-title">Lead to disbursement prediction</div>
-                        <div>Built a model to predict lead conversion to personal loan customer using PCA and Random Forest.</div>
+                        <div>Developed a predictive model to estimate the probability of lead conversion into disbursed
+                            personal loans. Leveraged Principal Component Analysis (PCA) for dimensionality reduction of
+                            complex financial data and Random Forest for robust classification, enhancing lead
+                            prioritization efficiency. <br><strong>Tech Stack:</strong> Python, Scikit-learn, PCA,
+                            Random Forest.</div>
                     </div>
                     <div class="project-card">
-                        <div class="project-title">Chat with your video bot <a class="project_link" href="https://medium.com/@mohanty93/creating-a-rag-application-from-scratch-4e800e681113" target="_blank"><i class="fa-brands fa-medium"></i></a></div>
-                        <div>Built a RAG app to answer questions using YouTube video content as knowledge base. Used Whisper, GPT-3.5, Pinecone.</div>
+                        <div class="project-title">Chat with your video bot <a class="project_link"
+                                href="https://medium.com/@mohanty93/creating-a-rag-application-from-scratch-4e800e681113"
+                                target="_blank"><i class="fa-brands fa-medium"></i></a></div>
+                        <div>Engineered an interactive RAG application that transforms YouTube video content into a
+                            searchable knowledge base. The system utilizes OpenAI's Whisper for high-accuracy
+                            transcription, LangChain for orchestration, and Pinecone for efficient vector retrieval,
+                            enabling real-time querying of video insights. <br><strong>Tech Stack:</strong> Python,
+                            LangChain, Whisper, GPT-3.5, Pinecone.</div>
                     </div>
                 </div>
             </div>
@@ -276,21 +410,47 @@
                 <div class="section-title"><i class="fa-solid fa-gears"></i> Skills</div>
                 <div class="card">
                     <table class="skills-table">
-                        <tr><th>Programming Languages</th><td>Python, SQL, Pyspark</td></tr>
-                        <tr><th>Technical Skills</th><td>Predictive modeling, EDA, ANN, NLP, Hyperparameters tuning, Deployment, Generative AI</td></tr>
-                        <tr><th>Tools</th><td>Databricks, SQL Server, LLMs, Langchain, Docker, TensorFlow, Keras, PyTorch, Kubeflow, Mlflow, Scikit-learn, Pinecone, ChromaDB, Vector Databases, Graph Databases, Gemini, FastAPI, LLAMA</td></tr>
-                        <tr><th>Working Environments</th><td>Jupyter Notebook, Google Colab, Spyder, VSCode, Databricks, CursorAI</td></tr>
+                        <tr>
+                            <th>Languages</th>
+                            <td>Python, SQL</td>
+                        </tr>
+                        <tr>
+                            <th>Agentic & GenAI</th>
+                            <td>LangGraph, LangChain, OpenAI APIs, LLaMA, Vector Databases, RAG</td>
+                        </tr>
+                        <tr>
+                            <th>MLOps & Backend</th>
+                            <td>Docker, Kubernetes, MLflow, FastAPI</td>
+                        </tr>
+                        <tr>
+                            <th>Observability</th>
+                            <td>Grafana, Prometheus, PowerBI</td>
+                        </tr>
+                        <tr>
+                            <th>Cloud</th>
+                            <td>Azure</td>
+                        </tr>
                     </table>
                 </div>
             </div>
             <div class="section">
                 <div class="section-title"><i class="fa-solid fa-certificate"></i> Certifications</div>
                 <div class="card certs">
-                    <div>Knowledge Graphs for RAG <a class="cert-link" href="https://learn.deeplearning.ai/accomplishments/7becb829-4fba-4526-aa84-5dd1d584d92b?usp=sharing" target="_blank"><i class="fa-solid fa-link"></i></a></div>
-                    <div>Generative AI for Everyone <a class="cert-link" href="https://www.coursera.org/account/accomplishments/certificate/E5EQT4U43ELF" target="_blank"><i class="fa-solid fa-link"></i></a></div>
-                    <div>Prompt Engineering for ChatGPT <a class="cert-link" href="https://www.coursera.org/account/accomplishments/verify/H5HYMEQ83ABK" target="_blank"><i class="fa-solid fa-link"></i></a></div>
-                    <div>GPT Vision: Seeing the World through Generative AI <a class="cert-link" href="https://www.coursera.org/account/accomplishments/certificate/ZU3BJ35SU382" target="_blank"><i class="fa-solid fa-link"></i></a></div>
-                    <div>Querying Microsoft SQL Server with Transact-SQL <a class="cert-link" href="https://www.udemy.com/certificate/UC-bb01915f-1824-4eb0-acee-215259801bf1/?utm_source=sendgrid.com&utm_medium=email&utm_campaign=email" target="_blank"><i class="fa-solid fa-link"></i></a></div>
+                    <div>Knowledge Graphs for RAG <a class="cert-link"
+                            href="https://learn.deeplearning.ai/accomplishments/7becb829-4fba-4526-aa84-5dd1d584d92b?usp=sharing"
+                            target="_blank"><i class="fa-solid fa-link"></i></a></div>
+                    <div>Generative AI for Everyone <a class="cert-link"
+                            href="https://www.coursera.org/account/accomplishments/certificate/E5EQT4U43ELF"
+                            target="_blank"><i class="fa-solid fa-link"></i></a></div>
+                    <div>Prompt Engineering for ChatGPT <a class="cert-link"
+                            href="https://www.coursera.org/account/accomplishments/verify/H5HYMEQ83ABK"
+                            target="_blank"><i class="fa-solid fa-link"></i></a></div>
+                    <div>GPT Vision: Seeing the World through Generative AI <a class="cert-link"
+                            href="https://www.coursera.org/account/accomplishments/certificate/ZU3BJ35SU382"
+                            target="_blank"><i class="fa-solid fa-link"></i></a></div>
+                    <div>Querying Microsoft SQL Server with Transact-SQL <a class="cert-link"
+                            href="https://www.udemy.com/certificate/UC-bb01915f-1824-4eb0-acee-215259801bf1/?utm_source=sendgrid.com&utm_medium=email&utm_campaign=email"
+                            target="_blank"><i class="fa-solid fa-link"></i></a></div>
                 </div>
             </div>
             <div class="section">
@@ -300,9 +460,11 @@
                 </div>
             </div>
             <div style="text-align:center; margin: 40px 0 0 0;">
-                <a href="/static/Sidhartha_Mohanty_Resume.pdf" download="Sidhartha_Mohanty_Resume.pdf" class="download-btn"><i class="fa-solid fa-download"></i> Download Resume (PDF)</a>
+                <a href="/static/Sidhartha_Mohanty_Resume.pdf" download="Sidhartha_Mohanty_Resume.pdf"
+                    class="download-btn"><i class="fa-solid fa-download"></i> Download Resume (PDF)</a>
             </div>
         </div>
     </div>
 </body>
+
 </html>
